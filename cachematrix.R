@@ -1,7 +1,8 @@
-## Put comments here that give an overall description of what your
-## functions do
+## These functions are used to demonstrate how variables can be 
+## stored outside of the current environment for later use
+## These functions create a special object that 
+## stores a matrix and caches its inverse.
 
-## Write a short comment describing this function
 
 makeCacheMatrix <- function(x = matrix()) {
 	inverse <- NULL
@@ -18,8 +19,8 @@ makeCacheMatrix <- function(x = matrix()) {
 
 }
 
-
-## Write a short comment describing this function
+## Use the cached inverted matrix from function above if it exists
+## If the inverse has already been calculated use the one in cache
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
